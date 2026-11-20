@@ -2,6 +2,25 @@
 
 A modern, polished, dating-style discovery experience inspired by Tinder and Bumble, built with **React**, **Vite**, **Express**, and resilient JSON persistence.
 
+[![Node.js](https://img.shields.io/badge/Node.js-v18%2B-green.svg)](https://nodejs.org/)
+[![React](https://img.shields.io/badge/React-18-blue.svg)](https://react.dev/)
+[![Vite](https://img.shields.io/badge/Vite-5.0-646CFF.svg)](https://vitejs.dev/)
+[![Express](https://img.shields.io/badge/Express-4.19-lightgrey.svg)](https://expressjs.com/)
+[![Tests](https://img.shields.io/badge/Tests-10%2F10%20Passing-brightgreen.svg)](#4-run-automated-test-suite)
+
+---
+
+## 📑 Table of Contents
+
+- [🌟 Key Features](#-key-features)
+- [📋 System Requirements](#-system-requirements)
+- [🚀 Quick Start](#-quick-start)
+- [🎮 How to Test the Demo](#-how-to-test-the-demo)
+- [🔌 API Endpoints Reference](#-api-endpoints-reference)
+- [🏗 Architecture & Code Structure](#-architecture--code-structure)
+- [💡 Improvements Summary](#-improvements-summary)
+- [📌 Remaining Limitations & Future Work](#-remaining-limitations--future-work)
+
 ---
 
 ## 🌟 Key Features
@@ -14,7 +33,7 @@ A modern, polished, dating-style discovery experience inspired by Tinder and Bum
 - **Celebratory Match Modal**: Beautiful full-screen celebration with confetti particles, dual interlocking avatars, and quick action buttons when a mutual match occurs.
 - **Dedicated Matches Section**: Rich gallery displaying mutual connections with quick-chat prompts and an expandable match detail modal.
 - **Intentional Blank Home Tab**: Conforms strictly to the assignment requirement keeping the Home tab blank.
-- **Mobile-First Responsive Layout**: Features a mobile bottom navigation bar with active badges, as well as a desktop layout with side promise cards and keyboard shortcuts.
+- **Mobile-First Responsive Layout**: Features a mobile bottom navigation bar with active badges, as well as a desktop layout with side context cards and keyboard shortcuts.
 - **Robust Persistence & Concurrency**: Swipes and matches persist in `server/data/state.json`. Swiped profiles never reappear upon reload. Concurrency-safe state writes prevent race conditions.
 - **One-Click Demo Reset**: Reset the demo anytime directly from the UI or via `POST /reset` without needing to delete files manually.
 
@@ -22,44 +41,57 @@ A modern, polished, dating-style discovery experience inspired by Tinder and Bum
 
 ## 📋 System Requirements
 
-- **Node.js**: v18.0.0+ (Tested on Node.js v20+ / v24)
-- **Package Manager**: npm v9+
-- **Operating System**: Windows (PowerShell), macOS, or Linux
+- **Node.js**: `v18.0.0+` (Tested on Node.js v20+ and v24)
+- **Package Manager**: `npm v9+`
+- **Operating System**: Windows (PowerShell / Command Prompt), macOS, or Linux
 
 ---
 
-## 🚀 Quick Start (Windows PowerShell)
+## 🚀 Quick Start
 
 ### 1. Clone & Enter Project Directory
-```powershell
+
+```bash
+git clone <repository-url>
 cd coy-discover
 ```
 
 ### 2. Install Dependencies
-```powershell
+
+Install root, client, and server dependencies in one command:
+
+```bash
 npm install
 ```
 
 ### 3. Run Development Environment
-Starts both the backend API and the Vite frontend concurrently:
-```powershell
+
+Starts both the Express API server and the Vite React frontend concurrently:
+
+```bash
 npm run dev
 ```
 
 - **Frontend Client**: [http://localhost:5173](http://localhost:5173)
-- **Backend API Server**: [http://localhost:4000](http://localhost:4000) *(with automatic fallback to port 4001 if port 4000 is reserved by Windows Hyper-V/NAT)*
+- **Backend API Server**: [http://localhost:4000](http://localhost:4000) *(with automatic fallback to port `4001` if port `4000` is reserved by Windows Hyper-V/NAT)*
 
 ### 4. Run Automated Test Suite
-To verify input validation, privacy protections, mutual match logic, duplicate swipe rejection, and persistence:
-```powershell
+
+Executes the end-to-end integration test suite verifying input validation, privacy protections, mutual match logic, duplicate swipe rejection, and persistence:
+
+```bash
 npm test
 ```
 
 ### 5. Production Build & Start
-```powershell
+
+To build the client SPA and run the Express production server:
+
+```bash
 npm run build
 npm start
 ```
+
 The Express server will automatically serve the production-optimized React SPA directly from `client/dist`.
 
 ---
@@ -73,22 +105,43 @@ The Express server will automatically serve the production-optimized React SPA d
    - Swipe **Right** or click **Like** on the first profile (**Aarav**).
    - Because Aarav has an incoming like on you, the celebration modal will immediately trigger with confetti and celebratory messaging!
 3. **Trigger a Normal (Non-Matching) Like**:
-   - Swipe **Right** on a profile that hasn't liked you (e.g., `p02` Maya). The like is saved, but no match is generated.
+   - Swipe **Right** on a profile that has not liked you (e.g., `p02` Maya). The like is saved, but no match is generated.
 4. **Pass a Profile**:
    - Swipe **Left** or click **Pass** on any profile. It is removed and recorded.
 5. **Persistence**:
    - Refresh your browser (`F5` or `Ctrl+R`). Notice that swiped profiles **never reappear**, and your mutual matches remain safely stored in the Matches tab.
 6. **Reset Demo**:
-   - Click the **"Reset Demo"** button in the top navigation bar or the empty feed screen, or run:
-     ```powershell
-     Invoke-RestMethod -Method Post -Uri http://localhost:4000/reset
-     ```
+   - Click the **Reset Demo** button in the top navigation bar or the empty feed screen, or run:
+
+   **Windows (PowerShell)**:
+   ```powershell
+   Invoke-RestMethod -Method Post -Uri http://localhost:4000/reset
+   ```
+
+   **macOS / Linux (cURL)**:
+   ```bash
+   curl -X POST http://localhost:4000/reset
+   ```
 
 ---
 
 ## 🔌 API Endpoints Reference
 
-### 1. `GET /feed`
+### Summary of Endpoints
+
+| Method | Endpoint | Description |
+|:---|:---|:---|
+| `GET` | `/feed` | Returns unswiped profiles for the active demo user |
+| `POST` | `/swipe` | Submits a swipe decision (`like` or `pass`) and calculates matches |
+| `GET` | `/matches` | Returns the list of confirmed mutual matches |
+| `POST` | `/reset` | Resets state back to default seeded demo data |
+| `GET` | `/health` | Server health check and system status |
+
+---
+
+### Detailed Specifications
+
+#### 1. `GET /feed`
 Returns unswiped profiles for the active demo user.
 
 - **Response `200 OK`**:
@@ -109,7 +162,7 @@ Returns unswiped profiles for the active demo user.
 
 ---
 
-### 2. `POST /swipe`
+#### 2. `POST /swipe`
 Submits a swipe decision for a profile.
 
 - **Request Body**:
@@ -120,8 +173,8 @@ Submits a swipe decision for a profile.
   }
   ```
 - **Validation**:
-  - `profileId` must be a non-empty string.
-  - `direction` must be strictly `"like"` or `"pass"`.
+  - `profileId`: Non-empty string.
+  - `direction`: Must strictly be `"like"` or `"pass"`.
 - **Responses**:
   - **`200 OK` (Mutual Match)**:
     ```json
@@ -154,7 +207,7 @@ Submits a swipe decision for a profile.
 
 ---
 
-### 3. `GET /matches`
+#### 3. `GET /matches`
 Returns the list of confirmed mutual matches.
 
 - **Response `200 OK`**:
@@ -175,7 +228,7 @@ Returns the list of confirmed mutual matches.
 
 ---
 
-### 4. `POST /reset` *(Helper)*
+#### 4. `POST /reset` *(Helper)*
 Resets `server/data/state.json` back to default demo seed data.
 
 - **Response `200 OK`**:
@@ -188,8 +241,16 @@ Resets `server/data/state.json` back to default demo seed data.
 
 ---
 
-### 5. `GET /health`
+#### 5. `GET /health`
 Returns health check status and timestamp.
+
+- **Response `200 OK`**:
+  ```json
+  {
+    "status": "ok",
+    "timestamp": "2026-11-20T12:00:00.000Z"
+  }
+  ```
 
 ---
 
@@ -252,5 +313,3 @@ coy-discover/
 - **Multi-user Authentication**: This assignment assumes a single demo user. In a full production app, sessions would be governed by JWT / OAuth tokens with an active user table in PostgreSQL / MongoDB.
 - **Real-time Messaging**: The Matches view provides an interactive "Say Hello" icebreaker interface; real-time messaging could be enabled via WebSockets (Socket.io) or WebRTC.
 - **Photo Uploads**: Seed profiles utilize high-resolution Unsplash photos. A future enhancement could allow uploading custom photos via AWS S3 / Cloudinary.
-#   c o y - d i s c o v e r  
- 
