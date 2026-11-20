@@ -1,0 +1,422 @@
+[
+  {
+    "id": "p01",
+    "name": "Aarav",
+    "age": 24,
+    "photo": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=900&q=85",
+    "bio": "Architect by day, vinyl record collector by night. Always down for late-night chai and indie rock gigs.",
+    "city": "Delhi",
+    "interests": [
+      "Architecture",
+      "Vinyl Records",
+      "Live Music",
+      "Chai"
+    ]
+  },
+  {
+    "id": "p02",
+    "name": "Maya",
+    "age": 23,
+    "photo": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=900&q=85",
+    "bio": "Specialty coffee enthusiast, slow runner, and bookstore wanderer with an unhealthy soft spot for sunsets.",
+    "city": "Chandigarh",
+    "interests": [
+      "Specialty Coffee",
+      "Bookstores",
+      "Trail Running",
+      "Podcasts"
+    ]
+  },
+  {
+    "id": "p03",
+    "name": "Ishita",
+    "age": 25,
+    "photo": "https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=900&q=85",
+    "bio": "Product designer who takes ceramic pottery classes and makes sourdough. Tell me your favorite travel mishap.",
+    "city": "Pune",
+    "interests": [
+      "Ceramics",
+      "Sourdough",
+      "Design",
+      "Solo Travel"
+    ]
+  },
+  {
+    "id": "p04",
+    "name": "Kabir",
+    "age": 26,
+    "photo": "https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?auto=format&fit=crop&w=900&q=85",
+    "bio": "Tech founder on weekdays, amateur chef on weekends. Looking for someone to test my homemade pesto recipes.",
+    "city": "Bengaluru",
+    "interests": [
+      "Cooking",
+      "Startups",
+      "Board Games",
+      "Film Photography"
+    ]
+  },
+  {
+    "id": "p05",
+    "name": "Ananya",
+    "age": 23,
+    "photo": "https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=900&q=85",
+    "bio": "Classical dancer turned UX writer. Big fan of historical fiction, heritage walks, and spicy street chaat.",
+    "city": "Jaipur",
+    "interests": [
+      "Dance",
+      "Writing",
+      "History",
+      "Street Food"
+    ]
+  },
+  {
+    "id": "p06",
+    "name": "Reyansh",
+    "age": 27,
+    "photo": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=900&q=85",
+    "bio": "Bouldering at 7 AM, rooftop jazz by sunset. Looking for a hiking partner with a high tolerance for bad puns.",
+    "city": "Mumbai",
+    "interests": [
+      "Bouldering",
+      "Jazz",
+      "Hiking",
+      "Cinematography"
+    ]
+  },
+  {
+    "id": "p07",
+    "name": "Sana",
+    "age": 24,
+    "photo": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=900&q=85",
+    "bio": "Botanist and wildlife lover. My apartment looks like a greenhouse, and I wouldn't have it any other way.",
+    "city": "Dehradun",
+    "interests": [
+      "Plant Care",
+      "Stargazing",
+      "Bird Watching",
+      "Acoustic Music"
+    ]
+  },
+  {
+    "id": "p08",
+    "name": "Vihaan",
+    "age": 25,
+    "photo": "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=900&q=85",
+    "bio": "Data scientist who plays keyboard in a weekend funk band. Connoisseur of spicy biryani and deep conversations.",
+    "city": "Hyderabad",
+    "interests": [
+      "Synthesizers",
+      "Funk Music",
+      "Food Science",
+      "Data"
+    ]
+  },
+  {
+    "id": "p09",
+    "name": "Meera",
+    "age": 24,
+    "photo": "https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?auto=format&fit=crop&w=900&q=85",
+    "bio": "Documentary filmmaker exploring old bookstalls on College Street. I will gladly debate you on cinema aesthetics.",
+    "city": "Kolkata",
+    "interests": [
+      "Documentaries",
+      "Cinema",
+      "Literature",
+      "Tea"
+    ]
+  },
+  {
+    "id": "p10",
+    "name": "Arjun",
+    "age": 28,
+    "photo": "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&w=900&q=85",
+    "bio": "Scuba dive instructor and marine conservationist. Happiest at 15 meters underwater or in a beach hammock.",
+    "city": "Goa",
+    "interests": [
+      "Scuba Diving",
+      "Ocean",
+      "Surfing",
+      "Acoustic Guitar"
+    ]
+  },
+  {
+    "id": "p11",
+    "name": "Tara",
+    "age": 24,
+    "photo": "https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?auto=format&fit=crop&w=900&q=85",
+    "bio": "Art curator with an eye for surrealism and vintage thrift finds. If you know a hidden rooftop café, let's go.",
+    "city": "Delhi",
+    "interests": [
+      "Modern Art",
+      "Thrifting",
+      "Photography",
+      "Café Hopping"
+    ]
+  },
+  {
+    "id": "p12",
+    "name": "Rohan",
+    "age": 26,
+    "photo": "https://images.unsplash.com/photo-1492562080023-ab3db95bfbce?auto=format&fit=crop&w=900&q=85",
+    "bio": "Game designer and trivia host. I bring competitive board game energy, but promise to share my dessert.",
+    "city": "Bengaluru",
+    "interests": [
+      "Game Dev",
+      "Trivia",
+      "Rock Climbing",
+      "Gelato"
+    ]
+  },
+  {
+    "id": "p13",
+    "name": "Kiara",
+    "age": 22,
+    "photo": "https://images.unsplash.com/photo-1531123897727-8f129e1688ce?auto=format&fit=crop&w=900&q=85",
+    "bio": "Fashion stylist and pottery hobbyist. I believe the best weekends involve flea markets and spontaneous road trips.",
+    "city": "Mumbai",
+    "interests": [
+      "Fashion",
+      "Pottery",
+      "Road Trips",
+      "Electronic Music"
+    ]
+  },
+  {
+    "id": "p14",
+    "name": "Aditya",
+    "age": 27,
+    "photo": "https://images.unsplash.com/photo-1501196354995-cbb51c65aaea?auto=format&fit=crop&w=900&q=85",
+    "bio": "Marathon runner and automotive engineer. Let's trade Spotify playlists and see who has better 90s hip-hop picks.",
+    "city": "Pune",
+    "interests": [
+      "Marathon Running",
+      "Cars",
+      "Hip-Hop",
+      "Camping"
+    ]
+  },
+  {
+    "id": "p15",
+    "name": "Naina",
+    "age": 25,
+    "photo": "https://images.unsplash.com/photo-1488426862026-3ee34a7d66df?auto=format&fit=crop&w=900&q=85",
+    "bio": "Marine biologist and kayaker. Will happily teach you how to paddle through calm coastal backwaters at golden hour.",
+    "city": "Kochi",
+    "interests": [
+      "Kayaking",
+      "Marine Life",
+      "Yoga",
+      "Sunsets"
+    ]
+  },
+  {
+    "id": "p16",
+    "name": "Dev",
+    "age": 25,
+    "photo": "https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?auto=format&fit=crop&w=900&q=85",
+    "bio": "Craft brewer and specialty baker. Currently perfecting a cardamom brioche. Quality food is my love language.",
+    "city": "Ahmedabad",
+    "interests": [
+      "Baking",
+      "Craft Beer",
+      "Cycling",
+      "Graphic Novels"
+    ]
+  },
+  {
+    "id": "p17",
+    "name": "Aisha",
+    "age": 23,
+    "photo": "https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=900&q=85",
+    "bio": "Poet and cultural heritage researcher. Lover of Urdu poetry, intricate embroidery, and slow afternoon teas.",
+    "city": "Lucknow",
+    "interests": [
+      "Poetry",
+      "Heritage",
+      "Calligraphy",
+      "Slow Living"
+    ]
+  },
+  {
+    "id": "p18",
+    "name": "Krish",
+    "age": 26,
+    "photo": "https://images.unsplash.com/photo-1496345875659-11f7dd282d1d?auto=format&fit=crop&w=900&q=85",
+    "bio": "Robotics engineer who spends weekends playing ultimate frisbee and browsing second-hand manga shops.",
+    "city": "Chennai",
+    "interests": [
+      "Robotics",
+      "Frisbee",
+      "Anime",
+      "Filter Coffee"
+    ]
+  },
+  {
+    "id": "p19",
+    "name": "Zoya",
+    "age": 24,
+    "photo": "https://images.unsplash.com/photo-1520813792240-56fc4a3765a7?auto=format&fit=crop&w=900&q=85",
+    "bio": "Interior stylist obsessed with Scandinavian lighting and fiddle-leaf figs. Looking for someone to explore design spaces.",
+    "city": "Chandigarh",
+    "interests": [
+      "Interior Design",
+      "Architecture",
+      "Coffee",
+      "Flea Markets"
+    ]
+  },
+  {
+    "id": "p20",
+    "name": "Neil",
+    "age": 28,
+    "photo": "https://images.unsplash.com/photo-1504257432389-52343af06ae3?auto=format&fit=crop&w=900&q=85",
+    "bio": "Investigative journalist and amateur saxophonist. Always asking 'why' and usually buried in a non-fiction book.",
+    "city": "Delhi",
+    "interests": [
+      "Journalism",
+      "Saxophone",
+      "Non-Fiction",
+      "Street Photography"
+    ]
+  },
+  {
+    "id": "p21",
+    "name": "Diya",
+    "age": 23,
+    "photo": "https://images.unsplash.com/photo-1517486808906-6ca8b3f04846?auto=format&fit=crop&w=900&q=85",
+    "bio": "UI animator and analog synth explorer. I love game sound design, iced matcha lattes, and golden retrievers.",
+    "city": "Bengaluru",
+    "interests": [
+      "Animation",
+      "Matcha",
+      "Dog Lover",
+      "Synths"
+    ]
+  },
+  {
+    "id": "p22",
+    "name": "Vikram",
+    "age": 27,
+    "photo": "https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=900&q=85",
+    "bio": "Sound engineer and festival producer. Can recommend an obscure indie track for literally any mood or time of day.",
+    "city": "Mumbai",
+    "interests": [
+      "Sound Design",
+      "Festivals",
+      "Audiobooks",
+      "Midnight Drives"
+    ]
+  },
+  {
+    "id": "p23",
+    "name": "Myra",
+    "age": 25,
+    "photo": "https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?auto=format&fit=crop&w=900&q=85",
+    "bio": "Jewelry designer and watercolorist inspired by desert landscapes. Tell me what makes your eyes light up with joy.",
+    "city": "Jaipur",
+    "interests": [
+      "Jewelry Design",
+      "Watercolor",
+      "Travel",
+      "Folk Art"
+    ]
+  },
+  {
+    "id": "p24",
+    "name": "Yash",
+    "age": 26,
+    "photo": "https://images.unsplash.com/photo-1539614474468-f423a2d2312c?auto=format&fit=crop&w=900&q=85",
+    "bio": "Aerospace engineer and astrophotographer. I spend clear night skies in the hills capturing distant nebulae.",
+    "city": "Hyderabad",
+    "interests": [
+      "Astrophotography",
+      "Space",
+      "Trekking",
+      "Guitar"
+    ]
+  },
+  {
+    "id": "p25",
+    "name": "Aanya",
+    "age": 24,
+    "photo": "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=900&q=85",
+    "bio": "Cognitive psychologist and podcast host. Fascinated by human behavior, behavioral economics, and great storytelling.",
+    "city": "Pune",
+    "interests": [
+      "Psychology",
+      "Podcasting",
+      "Running",
+      "Books"
+    ]
+  },
+  {
+    "id": "p26",
+    "name": "Veer",
+    "age": 27,
+    "photo": "https://images.unsplash.com/photo-1522529599102-193c0d76b5b6?auto=format&fit=crop&w=900&q=85",
+    "bio": "Heritage restorer and coffee roaster. Passionate about old colonial architecture and pulling perfect espresso shots.",
+    "city": "Kolkata",
+    "interests": [
+      "Espresso",
+      "Restoration",
+      "Chess",
+      "Classic Rock"
+    ]
+  },
+  {
+    "id": "p27",
+    "name": "Riya",
+    "age": 23,
+    "photo": "https://images.unsplash.com/photo-1546961329-78bef0414d7c?auto=format&fit=crop&w=900&q=85",
+    "bio": "High-altitude trekker and mountain guide in training. The Himalayas have my heart, but I clean up nicely for dinner.",
+    "city": "Dehradun",
+    "interests": [
+      "Mountaineering",
+      "Trekking",
+      "Campfires",
+      "Photography"
+    ]
+  },
+  {
+    "id": "p28",
+    "name": "Ahaan",
+    "age": 25,
+    "photo": "https://images.unsplash.com/photo-1517849845537-4d257902454a?auto=format&fit=crop&w=900&q=85",
+    "bio": "Permaculture grower and acoustic musician. Growing organic avocados and playing open mic sessions along the coast.",
+    "city": "Goa",
+    "interests": [
+      "Permaculture",
+      "Acoustic Music",
+      "Surfing",
+      "Sustainability"
+    ]
+  },
+  {
+    "id": "p29",
+    "name": "Sara",
+    "age": 24,
+    "photo": "https://images.unsplash.com/photo-1524250502761-1ac6f2e30d43?auto=format&fit=crop&w=900&q=85",
+    "bio": "Brand strategist and amateur stand-up comedian. I will make you laugh until your cheeks hurt or die trying.",
+    "city": "Delhi",
+    "interests": [
+      "Stand-up Comedy",
+      "Branding",
+      "Badminton",
+      "Thai Food"
+    ]
+  },
+  {
+    "id": "p30",
+    "name": "Ira",
+    "age": 25,
+    "photo": "https://images.unsplash.com/photo-1502823403499-6ccfcf4fb453?auto=format&fit=crop&w=900&q=85",
+    "bio": "Creative technologist building interactive light installations. Big fan of ambient synth records and spicy ramen.",
+    "city": "Bengaluru",
+    "interests": [
+      "Creative Coding",
+      "Art Installations",
+      "Ramen",
+      "Ambient Music"
+    ]
+  }
+]
